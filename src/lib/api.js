@@ -1,6 +1,6 @@
 const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:4000/api";
-// const API_BASE =
-//   import.meta.env.VITE_API_URL || "http://api-senyum-dental.vercel.app/api";
+const API_BASE =
+  import.meta.env.VITE_API_URL || "http://api-senyum-dental.vercel.app/api";
 
 export async function api(path, options = {}) {
   const token = localStorage.getItem("sd_token");
